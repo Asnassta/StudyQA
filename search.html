@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" href="assets/css/ImageSelect.css">
+  	<link rel="stylesheet" href="assets/css/chosen.css">
+  	<link rel="stylesheet" href="assets/css/Flat.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<title>StudyQA</title>
+</head>
+<body>
+
+  
+	<!--Sprite-->
+	<svg style="display: none;">
+  		<symbol id="star" viewBox="0 0 19 18">
+    		<g><g><path d="M8.603 1.137a1 1 0 0 1 1.794 0l1.956 3.964a1 1 0 0 0 .753.547l4.375.636a1 1 0 0 1 .554 1.706l-3.165 3.085a1 1 0 0 0-.288.886l.747 4.357a1 1 0 0 1-1.45 1.054l-3.914-2.057a1 1 0 0 0-.93 0l-3.913 2.057a1 1 0 0 1-1.451-1.054l.747-4.358a1 1 0 0 0-.288-.885L.965 7.99a1 1 0 0 1 .554-1.706l4.375-.636a1 1 0 0 0 .753-.547z"/></g></g>
+  		</symbol>
+      <symbol id="arrow" viewBox="0 0 19 18">
+        <g><g transform="rotate(90 9.5 9.08)"><g/><g><g><path  d="M13.932 8.473L6.287.831a.861.861 0 0 0-1.215 0 .856.856 0 0 0 0 1.213L12.11 9.08l-7.038 7.035a.858.858 0 1 0 1.216 1.214l7.644-7.642a.866.866 0 0 0 0-1.214z"/></g></g></g></g>
+      </symbol>
+  		<symbol id="facebook" viewBox="0 0 6 12">
+    		<g><g><g><path  d="M3.82 11.444V6.075h1.482l.196-1.85H3.82l.003-.925c0-.483.046-.741.739-.741h.926V.71H4.006c-1.78 0-2.407.897-2.407 2.406v1.11H.49v1.85H1.6v5.368z"/></g></g></g>
+  		</symbol>
+  		<symbol id="telegram" viewBox="0 0 12 10">
+    		<g><g><g><path  d="M4.987 6.703l-.17 2.559c.25 0 .361-.115.501-.251l1.206-1.173 2.509 1.854c.461.255.795.123.91-.429l1.646-7.76c.169-.676-.257-.983-.699-.782L1.22 4.449c-.66.265-.657.633-.12.797l2.481.775 5.745-3.625c.271-.164.52-.076.316.106l-4.655 4.2z"/></g></g></g>
+  		</symbol>
+  		<symbol id="vk" viewBox="0 0 14 8">
+    		<g><g><g><path d="M7.378 7.488s.23-.025.35-.15c.107-.114.104-.33.104-.33s-.015-1.007.462-1.156c.47-.146 1.072.974 1.712 1.405.483.326.85.254.85.254l1.71-.023s.894-.054.47-.744c-.035-.057-.247-.51-1.27-1.444-1.073-.976-.93-.818.362-2.508.786-1.028 1.1-1.656 1.002-1.925-.093-.257-.672-.189-.672-.189L10.534.69s-.143-.019-.249.043c-.103.061-.17.203-.17.203s-.304.796-.71 1.473c-.858 1.428-1.2 1.504-1.34 1.415-.327-.207-.245-.83-.245-1.274 0-1.384.214-1.961-.417-2.11C7.194.39 7.04.356 6.505.351c-.687-.007-1.268.002-1.597.16-.22.105-.388.34-.285.353.127.017.415.076.568.28.197.264.19.855.19.855s.114 1.63-.265 1.832c-.259.14-.614-.144-1.379-1.44A11.952 11.952 0 0 1 3.05.994s-.056-.137-.159-.21c-.123-.09-.295-.117-.295-.117L.767.678S.492.686.392.803c-.09.104-.007.32-.007.32S1.817 4.41 3.438 6.068c1.487 1.52 3.175 1.42 3.175 1.42z"/></g></g></g>
+  		</symbol>
+  		<symbol id="twit" viewBox="0 0 13 11">
+    		<g><g><g><path  d="M6.39 3.304l.026.415-.42-.05c-1.528-.196-2.862-.857-3.995-1.967l-.554-.55-.143.406c-.302.907-.11 1.864.52 2.508.336.356.26.407-.319.195-.201-.067-.377-.118-.394-.093-.059.06.143.83.302 1.136.218.423.663.839 1.15 1.084l.411.195-.487.009c-.47 0-.486.008-.436.186.168.55.831 1.136 1.57 1.39l.52.178-.453.271c-.672.39-1.46.61-2.25.627-.377.009-.688.042-.688.068 0 .085 1.024.56 1.62.746 1.788.55 3.911.313 5.506-.628 1.133-.669 2.267-2 2.795-3.287.286-.687.571-1.941.571-2.543 0-.39.025-.44.495-.906.277-.272.538-.568.588-.653.084-.16.075-.16-.353-.017-.713.254-.814.22-.461-.16.26-.272.57-.763.57-.908 0-.025-.125.017-.268.094a4.685 4.685 0 0 1-.739.288l-.453.144-.411-.28C9.983 1.05 9.664.88 9.496.83 9.068.711 8.413.728 8.027.863c-1.049.382-1.712 1.365-1.636 2.44z"/></g></g></g>
+  		</symbol>
+  		<symbol id="inst" viewBox="0 0 100 100">
+    		<g>
+	<path d="M50.3,29c-11.6,0-21.1,9.5-21.1,21.1s9.5,21.1,21.1,21.1c11.6,0,21-9.5,21-21.1S61.8,29,50.3,29z M50.3,66.2
+		c-8.9,0-16.1-7.2-16.1-16.1c0-8.9,7.2-16.1,16.1-16.1c8.8,0,16,7.2,16,16.1C66.3,59,59.1,66.2,50.3,66.2z"/>
+	<path d="M73.8,17.1c-2.2,0-4.2,0.8-5.7,2.3c-1.5,1.5-2.3,3.5-2.3,5.7c0,2.2,0.8,4.2,2.3,5.7c1.5,1.5,3.5,2.3,5.7,2.3
+		s4.2-0.8,5.7-2.3v0c1.4-1.4,2.3-3.4,2.4-5.6l0-0.1c0-2.1-0.9-4.1-2.3-5.5C78.1,18,76,17.1,73.8,17.1z M75.9,27.2
+		c-1.1,1.1-3.2,1.1-4.3,0c-0.6-0.6-0.9-1.3-0.9-2.1s0.3-1.6,0.9-2.1c0.6-0.6,1.3-0.9,2.1-0.9c0.8,0,1.6,0.3,2.2,0.9
+		c0.5,0.5,0.9,1.3,0.9,2C76.8,25.9,76.5,26.7,75.9,27.2z"/>
+	<path d="M67.8,7H32.7C18.6,7,7.2,18.4,7.2,32.5v35.2c0,14.1,11.4,25.5,25.5,25.5h35.2c14.1,0,25.5-11.4,25.5-25.5V32.5
+		C93.3,18.4,81.9,7,67.8,7z M88.3,67.7c0,11.3-9.2,20.5-20.5,20.5H32.7c-11.3,0-20.5-9.2-20.5-20.5V32.5c0-11.3,9.2-20.5,20.5-20.5
+		h35.2c11.3,0,20.5,9.2,20.5,20.5V67.7z"/>
+</g>
+  		</symbol>
+
+  		<symbol id="bild-icon" viewBox="0 0 17 18">
+    		<g><g><g><path d="M9.432 14.03H7.19v3.444h2.242z"/></g><g><path d="M8.313 4.84l3.813 1.984v10.653h-1.747v-4.436H6.247v4.436H4.5V6.824zm-1.596 5.975H5.655v.992h1.062zm0-2.231H5.655v.992h1.062zm2.125 2.23H7.78v.993h1.062zm0-2.23H7.78v.992h1.062zm1.067.992h1.062v-.993H9.91zm0 2.23h1.062v-.991H9.91zM8.842 6.353H7.78v.992h1.062z"/></g><g><path  d="M16.375 8.4v9.079H13.07V8.4zm-1.121 6.274H14.19v.993h1.063zm0-2.23H14.19v.991h1.063zm0-2.232H14.19v.992h1.063z"/></g><g><path  d="M.25 8.4h3.305v9.079H.25zm1.121 2.804h1.063v-.992H1.37zm0 2.231h1.063v-.992H1.37zm0 2.232h1.063v-.993H1.37z"/></g><g><path  d="M8.775 3.985V2.12h1.927V.55H7.83v3.435l.475-.247z"/></g></g></g>
+  		</symbol>
+      <symbol id="map-icon" viewBox="0 0 11 14">
+        <g><g><g/><g><path  d="M5.506.65c3.188.022 5.73 2.65 5.477 5.709-.131 1.554-.818 2.86-2.117 3.795-1.099.79-1.992 1.731-2.644 2.893-.057.1-.115.194-.178.282-.292.432-.795.426-1.098-.01-.384-.56-.733-1.152-1.185-1.655-.47-.525-1.013-1.001-1.568-1.444C.407 8.804-.354 6.99.155 4.81.67 2.603 2.175 1.264 4.46.76c.338-.077.698-.077 1.047-.11zm.006 7.678c1.345 0 2.444-1.067 2.432-2.356-.011-1.3-1.104-2.357-2.438-2.357-1.339 0-2.438 1.057-2.45 2.351-.01 1.306 1.094 2.362 2.456 2.362z"/></g></g></g>
+      </symbol>
+      <symbol id="cup-icon" viewBox="0 0 12 12">
+        <g><g><g/><g><path d="M2.998 11.65c0-.418-.014-.819.005-1.22.023-.483.446-.883.97-.965.071-.009.175-.056.189-.108.168-.5.319-1.004.473-1.504.01-.026 0-.056 0-.04-.516-.146-1.032-.245-1.505-.435C1.69 6.801.82 5.741.385 4.391.188 3.797.085 3.176.01 2.56c-.094-.81.488-1.357 1.38-1.362h.994V.65h7.22v.547h.999c.881.005 1.45.54 1.388 1.337-.084 1.099-.347 2.155-.985 3.107-.812 1.212-2.003 1.897-3.532 2.104-.038.004-.076.013-.137.026.043.146.076.284.122.418.118.38.235.758.366 1.133.024.06.113.134.179.143.595.094.985.5.994 1.056.005.37 0 .745 0 1.133-1.994-.004-3.983-.004-6-.004zM1.24 2.322C.962 3.732 2.36 6.098 3.613 6.34c-.798-1.242-1.009-2.621-1.159-4.018H1.239zm8.308-.004c-.145 1.405-.361 2.785-1.182 4.065a3.403 3.403 0 0 0 1.74-1.505c.46-.797.657-1.655.69-2.56H9.547z"/></g></g></g>
+      </symbol>
+  		<symbol id="diploma-icon" viewBox="0 0 15 14">
+    		<g><g><g/><g><path  d="M8.483 11.191H1.183c-.493 0-.613-.111-.613-.568V1.179C.575.737.69.63 1.172.63H13.99c.46 0 .58.112.58.538v9.47c0 .437-.126.548-.602.548H11.94v.691c0 .432.005.864 0 1.296-.006.411-.329.569-.706.35-.262-.152-.525-.31-.771-.482-.175-.122-.317-.143-.503-.005-.24.177-.503.34-.771.472a.77.77 0 0 1-.476.061c-.202-.046-.235-.234-.235-.417 0-.558 0-1.117.005-1.676v-.285zm1.728-3.616c-.957 0-1.717.706-1.722 1.59-.006.884.76 1.605 1.7 1.615.941.01 1.75-.737 1.745-1.61.006-.874-.776-1.595-1.723-1.595zM7.548 3.83s0 .006 0 0h2.27c.563 0 1.132.006 1.695 0 .24 0 .41-.147.426-.345.017-.188-.142-.37-.371-.406-.071-.01-.148-.005-.22-.005H7.418c-1.214 0-2.423-.006-3.637.005-.147 0-.328.03-.42.116-.088.082-.121.26-.105.381.033.194.208.254.416.254h3.877zM6.236 6.28H8.8c.301 0 .465-.118.493-.331.027-.244-.164-.422-.487-.422a846.825 846.825 0 0 0-5.08 0c-.318 0-.51.153-.515.381 0 .229.186.371.509.371h2.516zm-1.291 1.7H3.66c-.192 0-.334.067-.41.235-.12.269.082.513.454.518.825.01 1.657.005 2.482 0 .307 0 .47-.153.465-.386-.005-.24-.164-.361-.481-.366H4.945z"/></g></g></g>
+  		</symbol>
+  		<symbol id="dialog-icon" viewBox="0 0 13 12">
+    		<g><g><g/><g><path  d="M0 9.266V.52h9.153v6.742H7.49c-1.72 0-3.445 0-5.165-.005a.61.61 0 0 0-.468.19C1.313 7.997.758 8.53.204 9.077c-.051.054-.112.11-.204.189zm7.622-5.737h-6.09v.71h6.09v-.71zm-5.337-.795h4.579v-.705h-4.58v.705zm4.574 2.294H2.295v.71h4.564v-.71z"/></g><g><path  d="M12.999 2.78v8.746c-.056-.045-.112-.08-.153-.12-.58-.57-1.165-1.14-1.74-1.714a.565.565 0 0 0-.443-.18c-2.167.005-4.34.005-6.507.005H3.82v-1.5h6.11V2.786C10.965 2.78 11.972 2.78 13 2.78z"/></g></g></g>
+  		</symbol>
+  		<symbol id="price-icon" viewBox="0 0 13 14">
+    		<g><g><g/><g><path  d="M13.001 3.505v2.132c0 .427-.152.792-.451 1.092-2.01 2.01-4.016 4.02-6.031 6.025-.528.528-1.152.528-1.675.005-1.487-1.482-2.97-2.964-4.452-4.447-.523-.522-.523-1.152 0-1.675 2.015-2.02 4.03-4.035 6.046-6.05A1.46 1.46 0 0 1 7.508.15h4.29c.757 0 1.198.442 1.198 1.198.005.716.005 1.437.005 2.157zM9.742 2.323a1.067 1.067 0 0 0-1.066 1.086 1.067 1.067 0 0 0 1.087 1.066 1.077 1.077 0 0 0-.02-2.152z"/></g></g></g>
+  		</symbol>
+  		<symbol id="review-icon" viewBox="0 0 18 19">
+    		<g><g><g/><g><path  d="M8.936 18.709a8.918 8.918 0 0 1-4.672-1.322l-3.358.917a.747.747 0 0 1-.875-1.04 6.731 6.731 0 0 0 .344-4.859 9.241 9.241 0 0 1-.28-1.156C-.758 6.362 2.53 1.693 7.42.842c.014-.003.031-.003.045-.007a8.968 8.968 0 0 1 6.476 1.382 8.94 8.94 0 0 1 3.84 5.716 8.93 8.93 0 0 1-1.33 6.758 8.948 8.948 0 0 1-5.716 3.838 9.24 9.24 0 0 1-1.8.18zm-4.55-2.883a.73.73 0 0 1 .416.127c1.67 1.107 3.67 1.5 5.631 1.107a7.448 7.448 0 0 0 4.764-3.2 7.462 7.462 0 0 0 1.108-5.631 7.448 7.448 0 0 0-3.2-4.764 7.457 7.457 0 0 0-5.428-1.142c-.014.003-.028.003-.042.007-4.05.717-6.771 4.598-6.068 8.659.056.326.137.65.236.966a8.24 8.24 0 0 1 .098 4.521l2.289-.625a.977.977 0 0 1 .197-.025z"/></g><g><path  d="M11.96 8.948H5.959a.747.747 0 0 1-.749-.75c0-.414.334-.748.749-.748h5.997c.415 0 .75.334.75.749a.744.744 0 0 1-.746.749z"/></g><g><path  d="M11.96 11.958H5.959a.747.747 0 0 1-.749-.75c0-.414.334-.748.749-.748h5.997c.415 0 .75.334.75.749a.746.746 0 0 1-.746.749z"/></g></g></g>
+  		</symbol>
+      <symbol id="rocket-icon" viewBox="0 0 32 33">
+        <g><g/><g><g><g><path d="M8.145 8.79l-2.775.217a2.468 2.468 0 0 0-1.884 1.108l-3.2 4.833a1.71 1.71 0 0 0 1.167 2.642l2.542.392c.591-3.15 2.016-6.292 4.15-9.192z"/></g></g><g><path d="M14.17 28.152l.392 2.541a1.724 1.724 0 0 0 1.691 1.459c.334 0 .659-.1.942-.284l4.833-3.2a2.481 2.481 0 0 0 1.109-1.883l.216-2.775c-2.891 2.125-6.033 3.55-9.183 4.142z"/></g><g><g><path d="M13.22 26.393c.092 0 .175-.008.267-.025a17.954 17.954 0 0 0 3.808-1.083L6.854 14.86a18.841 18.841 0 0 0-1.084 3.808c-.083.517.092 1.05.459 1.425l5.825 5.825c.316.3.733.475 1.166.475z"/></g><g><path d="M19.088 24.467c-.025-.025-.05-.059-.075-.084l-11.25-11.25c-.025-.025-.05-.05-.083-.075C10.222 8.142 14.522 4.4 17.813 2.7 21.938.567 26.272.15 29.005.15c.533 0 1 .017 1.4.033.842.05 1.508.717 1.558 1.559.134 2.441.034 7.658-2.516 12.6-1.7 3.283-5.442 7.583-10.359 10.125zm-1.866-14.234c0 1.259.491 2.434 1.375 3.317a4.702 4.702 0 0 0 3.316 1.367c1.2 0 2.4-.45 3.317-1.367a4.672 4.672 0 0 0 1.375-3.317c0-1.25-.492-2.433-1.375-3.316a4.693 4.693 0 0 0-6.625 0 4.666 4.666 0 0 0-1.383 3.316z"/></g><g><path d="M19.933 12.208c1.1 1.1 2.884 1.1 3.975 0a2.785 2.785 0 0 0 .825-1.991c0-.75-.291-1.459-.825-1.992a2.815 2.815 0 0 0-3.983 0 2.785 2.785 0 0 0-.825 1.992c.008.758.3 1.458.833 1.991z"/></g><g><path d="M.962 26.513a.94.94 0 0 0 .666-.275l3.059-3.058a.936.936 0 0 0 0-1.325.936.936 0 0 0-1.325 0L.295 24.913a.936.936 0 0 0 0 1.325.906.906 0 0 0 .667.275z"/></g><g><path d="M7.483 24.665a.936.936 0 0 0-1.325 0L.275 30.548a.936.936 0 0 0 .667 1.6.94.94 0 0 0 .666-.275l5.884-5.883a.943.943 0 0 0-.009-1.325z"/></g></g><g><path d="M8.963 27.465l-3.058 3.058a.936.936 0 0 0 .667 1.6.94.94 0 0 0 .666-.275l3.059-3.058a.936.936 0 0 0 0-1.325.946.946 0 0 0-1.334 0z"/></g></g></g></g>
+      </symbol>
+      <symbol id="horse-icon" viewBox="0 0 24 31">
+        <g><g/><g><g><g><path d="M5.335 17.282c-.387-5.125.055-8.914 1.355-11.586.21-.43.434-.812.666-1.156-1.1.812-2.268 2.047-3.283 3.922-.797 1.469-1.463 4.281-1.796 7.523-.209 2.047-.247 4.438-.093 5.688l.093.773H4.57c.015-.039.03-.07.046-.11.426-1 .898-2.687.72-5.054z"/></g><g><path d="M15.268.15v2.547c.465.11.914.281 1.332.523 1.858 1.055 6.147 4.586 6.526 4.836.434.282.728.719.828 1.227.101.508 0 1.015-.278 1.437-.233.414-1.239 2.078-2.47 2.078-.108 0-.217-.015-.325-.039l-2.694-.687c-1.045-.258-1.185-.195-1.533-.063-.318.125-.743.297-1.657.399-.201.015-.402.031-.604.031.333.883 3.004 6.524 3.6 7.836.403.883.573 1.61.627 2.21H6.45c.465-1.296.805-3.062.635-5.327C6.202 5.564 10.096 3.955 11.56 3.345l.518-.218.194-.563c0-.008.046-.672.519-1.328a3.08 3.08 0 0 1 .96-.852A3.563 3.563 0 0 1 14.827.15zm.147 7.96c.457 0 .898-.405.875-.882-.023-.476-.387-.883-.875-.883-.457 0-.898.407-.875.883.016.477.38.883.875.883z"/></g></g><g><path d="M3.328 24.25c-.62 0-1.208.297-1.548.813-.194.296-.31.648-.31 1.03v.54h20.655v-.54c0-.382-.116-.734-.31-1.03a1.849 1.849 0 0 0-1.548-.813z"/></g><g><path d="M23.584 28.39H.01v1.758h23.574z"/></g></g></g></g>
+      </symbol>
+      <symbol id="lamp-icon" viewBox="0 0 35 36">
+        "><g><g><g/><g><path d="M1.025 15.37h2.051a1.024 1.024 0 1 0 0-2.05h-2.05a1.024 1.024 0 1 0 0 2.05z"/></g><g><path d="M2.05 9.64a1.02 1.02 0 0 0 1.448 0 1.02 1.02 0 0 0 0-1.448L2.05 6.742A1.025 1.025 0 0 0 .6 8.192z"/></g><g><path d="M2.052 19.05L.602 20.5a1.025 1.025 0 0 0 1.45 1.45l1.449-1.45a1.025 1.025 0 0 0-1.45-1.45z"/></g><g><path d="M33.976 13.32h-2.05a1.024 1.024 0 1 0 0 2.05h2.05a1.024 1.024 0 1 0 0-2.05z"/></g><g><path d="M32.952 9.638L34.4 8.19a1.025 1.025 0 0 0-1.45-1.45l-1.449 1.45a1.02 1.02 0 0 0 0 1.45 1.02 1.02 0 0 0 1.45 0z"/></g><g><path d="M34.398 21.94a1.02 1.02 0 0 0 0-1.448l-1.449-1.45a1.025 1.025 0 0 0-1.45 1.45l1.45 1.449a1.02 1.02 0 0 0 1.45 0z"/></g><g><path d="M22.632 14.345V13.32h-1.026a3.08 3.08 0 0 0-3.076 3.076v1.026h1.025a3.08 3.08 0 0 0 3.077-3.077z"/></g><g><path d="M10.224 25.695h6.248v-6.22h-1.026a5.129 5.129 0 0 1-5.127-5.127v-2.05c0-.568.458-1.026 1.026-1.026h2.05c1.682 0 3.165.827 4.102 2.085.937-1.258 2.42-2.085 4.102-2.085h2.05c.568 0 1.026.458 1.026 1.025v2.05a5.129 5.129 0 0 1-5.127 5.128h-1.025v6.22h6.254a8.426 8.426 0 0 1 1.983-4.279 12.282 12.282 0 0 0 3.042-8.094c0-3.718-1.661-7.273-4.546-9.618-2.892-2.351-6.686-3.26-10.404-2.481-4.628.97-8.395 4.792-9.38 9.42-.833 3.937.199 7.888 2.824 10.842 1.066 1.196 1.716 2.707 1.928 4.21z"/></g><g><path d="M13.395 13.32H12.37v1.025a3.08 3.08 0 0 0 3.076 3.077h1.026v-1.026a3.08 3.08 0 0 0-3.077-3.076z"/></g><g><path d="M24.675 28.765V27.74H10.32v1.025a3.08 3.08 0 0 0 3.076 3.077H21.6a3.08 3.08 0 0 0 3.076-3.077z"/></g><g><path d="M21.578 33.9H13.43c.937 1.237 2.406 2.05 4.074 2.05 1.668 0 3.138-.813 4.074-2.05z"/></g></g></g>
+      </symbol>
+      <symbol id="docs-icon" viewBox="0 0 25 35">
+        <g><g><g/><g><path d="M0 .15h21.334C23.58.15 25 1.598 25 3.935c.013 8.806 0 17.611 0 26.417 0 2.35-1.408 3.798-3.653 3.798H0v-34zm12.43 21.396c4.402.013 7.94-3.639 7.978-8.248.051-4.542-3.538-8.327-7.889-8.353-4.363-.027-7.953 3.678-7.978 8.26-.026 4.582 3.513 8.328 7.89 8.341zm6.685 4.197v-1.9H5.809v1.9h13.306zm-11.53 3.945h9.78v-1.873h-9.78v1.872z"/></g><g><path d="M14.257 14.29c-.152 1.66-.33 3.254-1.167 4.675-.457.77-.774.784-1.23.013-.838-1.42-.99-3.028-1.18-4.688h3.577z"/></g><g><path d="M14.261 12.196c-.215.014-.38.04-.532.04H10.71c.14-1.673.33-3.267 1.142-4.688.469-.81.824-.797 1.293.04.787 1.42.964 2.988 1.117 4.608z"/></g><g><path d="M6.56 14.26h2.144c.266 1.488.532 2.948.786 4.383-1.306-.425-2.74-2.537-2.93-4.383z"/></g><g><path d="M15.44 18.762c.279-1.54.533-2.988.812-4.502h2.181c-.342 1.992-1.357 3.44-2.993 4.502z"/></g><g><path d="M9.526 7.72c-.279 1.5-.545 2.962-.824 4.476H6.52c.355-1.98 1.37-3.427 3.006-4.476z"/></g><g><path d="M16.232 12.193c-.267-1.501-.533-2.962-.812-4.463 1.624 1.01 2.613 2.457 3.006 4.463h-2.194z"/></g></g></g>
+      </symbol>
+      <symbol id="pazzle-icon" viewBox="0 0 32 32">
+        <g><g><g/><g><path d="M31.446 13.175h-4.299c.642 1.622.497 2.64-.472 3.342-.811.593-1.986.581-2.76-.036-.982-.776-1.115-1.768-.437-3.294h-4.214V8.9c1.55.654 2.507.533 3.27-.436.617-.775.63-1.962.036-2.76-.726-.97-1.72-1.115-3.33-.473V.92H29.691c1.174 0 1.755.581 1.755 1.732v10.523z"/></g><g><path d="M12.684 24.015v-4.263h4.238c-.641 1.66-.508 2.567.473 3.306.799.605 1.95.593 2.76-.024.933-.715 1.078-1.744.436-3.294h4.323v10.366c0 1.271-.58 1.828-1.852 1.828H12.708v-4.371c-.738.448-1.453.702-2.192.411-.448-.181-.896-.484-1.198-.847-.654-.8-.57-2.01.109-2.785.775-.909 1.78-1.03 3.257-.327z"/></g><g><path d="M12.668 7.52v4.323c1.345-.739 2.543-.715 3.452.605.544.8.435 1.913-.182 2.652-.775.908-1.66 1.017-3.258.375v2.398h-1.998c-.157-1.223-.702-2.24-1.72-2.979-.762-.557-1.622-.787-2.554-.75-1.986.06-3.342 1.331-3.96 3.753H.498c-.024-.181-.048-.339-.048-.484V9.179c0-1.042.605-1.684 1.635-1.684 3.415-.012 6.817 0 10.232 0 .097 0 .194.012.351.025z"/></g><g><path d="M8.418 19.698h2.398v1.998c-1.308.182-2.398.775-3.137 1.95-.508.8-.666 1.671-.593 2.603.157 1.865 1.526 3.222 3.73 3.657v1.999c-.182.012-.352.036-.533.036H2.182c-1.15 0-1.732-.593-1.732-1.756v-9.857-.605h4.31c-.677-1.575-.532-2.592.413-3.33.799-.618 1.973-.63 2.76-.037 1.006.75 1.163 1.744.485 3.342z"/></g></g></g>
+      </symbol>
+	</svg>
+
+	<div class="wrapper page_search">
+		
+		<main class="reset-style">
+			<section class="intro intro-search" id="card-search">
+        <div class="container">
+          <div class="intro__decors">
+              <div class="intro__decor intro__decor_1">
+                <img src="assets/images/cloud_big.svg" alt="">
+              </div>
+              <div class="intro__decor intro__decor_2">
+                <img src="assets/images/cloud_small.svg" alt="">
+              </div>
+              <div class="intro__decor intro__decor_3">
+                <img src="assets/images/cloud_xs.svg" alt="">
+              </div>
+              <div class="intro__decor intro__decor_4">
+                <img src="assets/images/cloud_small.svg" alt="">
+              </div>
+              <div class="intro__decor intro__decor_5">
+                <img src="assets/images/cloud.svg" alt="">
+              </div>
+              <div class="intro__decor intro__decor_6">
+                <img src="assets/images/cloud_big.svg" alt="">
+              </div>
+            </div><!--/intro__decors-->
+          <h1 class="title-main">Поиск наставников</h1>
+          <form class="card-consultation card-consultation_search">
+            <div class="card-consultation__header">
+              <a href="#" class="card-consultation__btn-more">
+                Расширенный поиск
+              </a>
+            </div>
+            <h2 class="card-consultation__title">Я хочу получить консультацию</h2>
+              <div class="card-consultation__inner">
+                <div class="card-consultation__item">
+                  <div class="card-consultation__desc">Страна</div>
+                  <div class="card-consultation__select-wrapper">
+                     <select  class="my-select">
+                        <option data-img-src="assets/images/flag-italy.svg">Италия</option>
+                        <option data-img-src="assets/images/flag-france.svg">Франция</option>
+                        <option data-img-src="assets/images/flag-germany.svg">Германия</option>
+                        <option data-img-src="assets/images/flag-spain.svg">Испания</option>
+                        <option data-img-src="assets/images/en.svg">США</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="card-consultation__item">
+                  <div class="card-consultation__desc">Специальность</div>
+                  <div class="card-consultation__select-wrapper">
+                     <select class="my-select">
+                       <option value="1">Физика</option>
+                       <option value="2">Психология</option>
+                     </select>
+                  </div>
+                </div>
+                 <div class="card-consultation__item">
+                  <div class="card-consultation__desc">Вопросы</div>
+                  <div class="card-consultation__select-wrapper">
+                     <select class="my-select">
+                       <option value="1">Как получить стипендию</option>
+                       <option value="2">Как получить стипендию</option>
+                     </select>
+                  </div>
+                </div>
+                <div class="card-consultation__item">
+                  <div class="card-consultation__desc">Уровень обучения</div>
+                  <div class="card-consultation__select-wrapper">
+                     <select class="my-select">
+                       <option value="1">Магистратуре</option>
+                       <option value="2">Бакалавриату</option>
+                     </select>
+                  </div>
+                </div>
+                
+
+                <div class="card-consultation__item_more">
+                  <div class="card-consultation__item">
+                    <div class="card-consultation__desc">Специальность</div>
+                    <div class="card-consultation__select-wrapper">
+                       <select class="my-select">
+                         <option value="1">Физика</option>
+                         <option value="2">Психология</option>
+                       </select>
+                    </div>
+                  </div>
+                </div><!--/card-consultation__item_more-->
+                <div class="card-consultation__item_more">
+                  <div class="card-consultation__item">
+                    <div class="card-consultation__desc">Специальность</div>
+                    <div class="card-consultation__select-wrapper">
+                       <select class="my-select">
+                         <option value="1">Физика</option>
+                         <option value="2">Психология</option>
+                       </select>
+                    </div>
+                  </div>
+                </div><!--/card-consultation__item_more-->
+                <div class="card-consultation__item_more">
+                  <div class="card-consultation__item">
+                    <div class="card-consultation__desc">Специальность</div>
+                    <div class="card-consultation__select-wrapper">
+                       <select class="my-select">
+                         <option value="1">Физика</option>
+                         <option value="2">Психология</option>
+                       </select>
+                    </div>
+                  </div>
+                </div><!--/card-consultation__item_more-->
+                <div class="card-consultation__item_more">
+                  <div class="card-consultation__item">
+                    <div class="card-consultation__desc">Специальность</div>
+                    <div class="card-consultation__select-wrapper">
+                       <select class="my-select">
+                         <option value="1">Физика</option>
+                         <option value="2">Психология</option>
+                       </select>
+                    </div>
+                  </div>
+                </div><!--/card-consultation__item_more-->
+                
+                <div class="card-consultation__buttons">
+                  <div class="card-consultation__check">
+                    <input type="checkbox" name="card-consultation__check" id="card-consultation__check">
+                    <label for="card-consultation__check">
+                      <span></span>
+                      <i>Полное сопровождение</i>
+                    </label>
+                  </div>
+                  <button type="submit" class="btn-main" data-scroll="mentors">Выбрать наставника</button>
+                  <button class="btn-reset" type="reset">Очистить поиск</button>
+                </div>
+
+            </div><!--/card-consultation__inner-->
+            <div class="card-consultation__decor">
+                  <img src="assets/images/books.png" alt="">
+              </div>
+          </form><!--/card-consultation-->
+          </div>       
+      </section><!--/intro-search-->
+
+			<section class="mentors" id="mentors">
+				<div class="container">
+					<div class="mentors__header">
+						<h2 class="title">Поможем подобрать подходящего наставника</h2>
+						<a href="#" class="btn-transparent">Не можете определиться с выбором наставника?</a>
+					</div>
+          <div class="mentors-search">
+            <div class="mentors-search__title">Найдено наставников: <span>61</span></div>
+            <div class="mentors-search__item">
+              <div class="mentors-search__desc">Сортировать по:</div>
+              <div class="card-consultation__select-wrapper">
+                 <select class="my-select">
+                   <option value="1">По цене (дешевые)</option>
+                   <option value="2">По цене (дорогие)</option>
+                 </select>
+              </div>
+            </div>
+          </div>
+					<div class="mentors__inner">
+            <!--/card-mentors-first-->
+						<div class="card-mentors">
+              <div class="card-mentors__top">
+							<div class="card-mentors__header">
+								<div class="card-mentors__country owl-carousel  owl-theme">
+                  <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/flag-italy.svg" alt="">
+                        </div>
+                        <div class="country-item__name">Италия</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+                   <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/en.svg" alt="">
+                        </div>
+                        <div class="country-item__name">США</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+                   <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/flag-germany.svg" alt="">
+                        </div>
+                        <div class="country-item__name">Германия</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+                 </div><!--/owl-carousel-->
+							</div>
+							<div class="card-mentors__content">
+                <a href="#" class="card-mentors__link-block">
+								<div class="card-mentors__photo">
+									<img src="assets/images/mentor_4.png" alt="">
+								</div>
+								<div class="card-mentors__name">
+									Cтанислав
+								</div>
+								<div  class="card-mentors__reviews reviews-box">
+									<div class="reviews-box__review">
+										<svg>
+        									<use xlink:href="#review-icon"></use>
+      									</svg>
+      									<div class="reviews-box__counter">1</div>
+									</div>
+									<div class="rating-bg">
+                        <div style="width: 70%"></div>
+                      </div>
+									<div class="reviews-box__counter">4.5</div>
+								</div><!--/reviews-box-->
+                </a>
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                      <use xlink:href="#map-icon"></use>
+                    </svg>
+                    <span>Гражданство:</span>
+                    <span class="card-mentors__info">Украина</span>
+                   </div>
+                  </div>
+                </div><!--/card-mentors__about-->
+								<div class="card-mentors__about">
+									<div>
+										<div class="card-mentors__description">
+                      <svg>
+                      <use xlink:href="#bild-icon"></use>
+                    </svg>
+                    <span>Образование</span>
+                  </div>
+										<div class="card-mentors__info">Университет Болоньи, Мюнхенский  технический университет</div>
+									</div>
+								</div><!--/card-mentors__about-->
+								<div class="card-mentors__about">
+									<div>
+										<div class="card-mentors__description">
+                      <svg>
+                        <use xlink:href="#cup-icon"></use>
+                      </svg>
+                    <span>The greatest achievement:</span>
+                  </div>
+										<div class="card-mentors__info">
+                      Received a full 
+                      <a href="#" class="card-mentors__btn-more">...</a>
+                      <span class="card-mentors__info-more">
+                        , Received a full scholarship from the Government of Italy, studied on a double degree in France with a scholarship from the European Union, received grants from the ERASMUS + program
+                      </span>
+                  </div>
+									</div>
+								</div><!--/card-mentors__about-->
+								<div class="card-mentors__about">
+									<div>
+										<div class="card-mentors__description">
+                     <svg>
+                       <use xlink:href="#price-icon"></use>
+                     </svg>
+                     <span>Стоиомсть косультации</span>
+                    </div>
+										<div class="card-mentors__info card-mentors__info_big">$50.0  (4 500 руб)</div>
+									</div>
+								</div><!--/card-mentors__about-->
+							</div><!--/card-mentors__content-->
+            </div><!--/card-mentors__top-->
+            <div class="card-mentors__buttons">
+              <a href="#" class="card-mentors__btn">Оплатить консультацию</a>
+              <a href="#" class="card-mentors__btn-transparent">Подробнее</a>
+            </div><!--/card-mentors__buttons-->
+						</div><!--/card-mentors-->
+						<div class="card-mentors">
+              <div class="card-mentors__top">
+              <div class="card-mentors__header">
+                <div class="card-mentors__country owl-carousel  owl-theme">
+                  <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/flag-italy.svg" alt="">
+                        </div>
+                        <div class="country-item__name">Италия</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+                   <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/en.svg" alt="">
+                        </div>
+                        <div class="country-item__name">США</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+
+                 </div><!--/owl-carousel-->
+              </div>
+              <div class="card-mentors__content">
+                <a href="#" class="card-mentors__link-block">
+                <div class="card-mentors__photo">
+                  <div class="card-mentors__best">
+                    <img src="assets/images/crown.svg" alt="">
+                    <span>Лучший<br> наставник</span>
+                 </div><!--/card-mentors__best-->
+                  <img src="assets/images/mentor_2.png" alt="">
+                </div>
+                <div class="card-mentors__name">
+                  Cтанислав
+                </div>
+                <div  class="card-mentors__reviews reviews-box">
+                  <div class="reviews-box__review">
+                    <svg>
+                          <use xlink:href="#review-icon"></use>
+                        </svg>
+                        <div class="reviews-box__counter">1</div>
+                  </div>
+                  <div class="rating-bg">
+                        <div style="width: 70%"></div>
+                      </div>
+                  <div class="reviews-box__counter">4.5</div>
+                </div><!--/reviews-box-->
+                </a>
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                      <use xlink:href="#map-icon"></use>
+                    </svg>
+                    <span>Гражданство:</span>
+                    <span class="card-mentors__info">Украина</span>
+                   </div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                      <use xlink:href="#bild-icon"></use>
+                    </svg>
+                    <span>Образование</span>
+                  </div>
+                    <div class="card-mentors__info">Университет Болоньи, Мюнхенский  технический университет</div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                        <use xlink:href="#cup-icon"></use>
+                      </svg>
+                    <span>The greatest achievement:</span>
+                  </div>
+                    <div class="card-mentors__info">
+                      Received a full scholarship from the Government of Italy, studied on a double degree in France with a scholarship from the European Union, received grants from the ERASMUS + program
+                      <a href="#" class="card-mentors__btn-more">...</a>
+                      <span class="card-mentors__info-more">
+                        , Received a full scholarship from the Government of Italy, studied on a double degree in France with a scholarship from the European Union, received grants from the ERASMUS + program
+                      </span>
+                  </div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                     <svg>
+                       <use xlink:href="#price-icon"></use>
+                     </svg>
+                     <span>Стоиомсть косультации</span>
+                    </div>
+                    <div class="card-mentors__info card-mentors__info_big">$50.0  (4 500 руб)</div>
+                  </div>
+                </div><!--/card-mentors__about-->
+              </div><!--/card-mentors__content-->
+            </div><!--/card-mentors__top-->
+            <div class="card-mentors__buttons">
+              <a href="#" class="card-mentors__btn">Оплатить консультацию</a>
+              <a href="#" class="card-mentors__btn-transparent">Подробнее</a>
+            </div><!--/card-mentors__buttons-->
+            </div><!--/card-mentors-->
+            <div class="card-mentors">
+              <div class="card-mentors__top">
+              <div class="card-mentors__header">
+                <div class="card-mentors__country owl-carousel  owl-theme">
+                  <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/flag-italy.svg" alt="">
+                        </div>
+                        <div class="country-item__name">Южная Корея</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+
+                 </div><!--/owl-carousel-->
+              </div>
+              <div class="card-mentors__content">
+                <a href="#" class="card-mentors__link-block">
+                <div class="card-mentors__photo">
+                  <img src="assets/images/mentor_4.png" alt="">
+                </div>
+                <div class="card-mentors__name">
+                  Cтанислав
+                </div>
+                <div  class="card-mentors__reviews reviews-box">
+                  <div class="reviews-box__review">
+                    <svg>
+                          <use xlink:href="#review-icon"></use>
+                        </svg>
+                        <div class="reviews-box__counter">1</div>
+                  </div>
+                  <div class="rating-bg">
+                        <div style="width: 70%"></div>
+                      </div>
+                  <div class="reviews-box__counter">4.5</div>
+                </div><!--/reviews-box-->
+                </a>
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                      <use xlink:href="#map-icon"></use>
+                    </svg>
+                    <span>Гражданство:</span>
+                    <span class="card-mentors__info">Украина</span>
+                   </div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                      <use xlink:href="#bild-icon"></use>
+                    </svg>
+                    <span>Образование</span>
+                  </div>
+                    <div class="card-mentors__info">Университет Болоньи, Мюнхенский  технический университет</div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                        <use xlink:href="#cup-icon"></use>
+                      </svg>
+                    <span>The greatest achievement:</span>
+                  </div>
+                    <div class="card-mentors__info">
+                      Received a full scholarship from the Government of Italy, studied on a double degree in France with a scholarship from the European Union, received grants from the ERASMUS + program
+                      <a href="#" class="card-mentors__btn-more">...</a>
+                      <span class="card-mentors__info-more">
+                        , Received a full scholarship from the Government of Italy, studied on a double degree in France with a scholarship from the European Union, received grants from the ERASMUS + program
+                      </span>
+                  </div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                     <svg>
+                       <use xlink:href="#price-icon"></use>
+                     </svg>
+                     <span>Стоиомсть косультации</span>
+                    </div>
+                    <div class="card-mentors__info card-mentors__info_big">$50.0  (4 500 руб)</div>
+                  </div>
+                </div><!--/card-mentors__about-->
+              </div><!--/card-mentors__content-->
+            </div><!--/card-mentors__top-->
+            <div class="card-mentors__buttons">
+              <a href="#" class="card-mentors__btn">Оплатить консультацию</a>
+              <a href="#" class="card-mentors__btn-transparent">Подробнее</a>
+            </div><!--/card-mentors__buttons-->
+            </div><!--/card-mentors-->
+            <div class="card-mentors">
+              <div class="card-mentors__top">
+              <div class="card-mentors__header">
+                <div class="card-mentors__country owl-carousel  owl-theme">
+                  <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/flag-italy.svg" alt="">
+                        </div>
+                        <div class="country-item__name">Италия</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+                   <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/en.svg" alt="">
+                        </div>
+                        <div class="country-item__name">США</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+                   <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/flag-germany.svg" alt="">
+                        </div>
+                        <div class="country-item__name">Германия</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+                 </div><!--/owl-carousel-->
+              </div>
+              <div class="card-mentors__content">
+                <a href="#" class="card-mentors__link-block">
+                <div class="card-mentors__photo">
+                  <img src="assets/images/mentor_4.png" alt="">
+                </div>
+                <div class="card-mentors__name">
+                  Cтанислав
+                </div>
+                <div  class="card-mentors__reviews reviews-box">
+                  <div class="reviews-box__review">
+                    <svg>
+                          <use xlink:href="#review-icon"></use>
+                        </svg>
+                        <div class="reviews-box__counter">1</div>
+                  </div>
+                  <div class="rating-bg">
+                        <div style="width: 70%"></div>
+                      </div>
+                  <div class="reviews-box__counter">4.5</div>
+                </div><!--/reviews-box-->
+                </a>
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                      <use xlink:href="#map-icon"></use>
+                    </svg>
+                    <span>Гражданство:</span>
+                    <span class="card-mentors__info">Украина</span>
+                   </div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                      <use xlink:href="#bild-icon"></use>
+                    </svg>
+                    <span>Образование</span>
+                  </div>
+                    <div class="card-mentors__info">Университет Болоньи, Мюнхенский  технический университет</div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                        <use xlink:href="#cup-icon"></use>
+                      </svg>
+                    <span>The greatest achievement:</span>
+                  </div>
+                    <div class="card-mentors__info">
+                      Received a full scholarship from the Government of Italy, studied on a double degree in France with a scholarship from the European Union, received grants from the ERASMUS + program
+                      <a href="#" class="card-mentors__btn-more">...</a>
+                      <span class="card-mentors__info-more">
+                        , Received a full scholarship from the Government of Italy, studied on a double degree in France with a scholarship from the European Union, received grants from the ERASMUS + program
+                      </span>
+                  </div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                     <svg>
+                       <use xlink:href="#price-icon"></use>
+                     </svg>
+                     <span>Стоиомсть косультации</span>
+                    </div>
+                    <div class="card-mentors__info card-mentors__info_big">$50.0  (4 500 руб)</div>
+                  </div>
+                </div><!--/card-mentors__about-->
+              </div><!--/card-mentors__content-->
+            </div><!--/card-mentors__top-->
+            <div class="card-mentors__buttons">
+              <a href="#" class="card-mentors__btn">Оплатить консультацию</a>
+              <a href="#" class="card-mentors__btn-transparent">Подробнее</a>
+            </div><!--/card-mentors__buttons-->
+            </div><!--/card-mentors-->
+            <div class="card-mentors">
+              <div class="card-mentors__top">
+              <div class="card-mentors__header">
+                <div class="card-mentors__country owl-carousel  owl-theme">
+                  <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/flag-italy.svg" alt="">
+                        </div>
+                        <div class="country-item__name">Италия</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+                   <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/en.svg" alt="">
+                        </div>
+                        <div class="country-item__name">Соединенные штаты Америки</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+                 </div><!--/owl-carousel-->
+              </div>
+              <div class="card-mentors__content">
+                <a href="#" class="card-mentors__link-block">
+                <div class="card-mentors__photo">
+                  <img src="assets/images/mentor_4.png" alt="">
+                </div>
+                <div class="card-mentors__name">
+                  Cтанислав
+                </div>
+                <div  class="card-mentors__reviews reviews-box">
+                  <div class="reviews-box__review">
+                    <svg>
+                          <use xlink:href="#review-icon"></use>
+                        </svg>
+                        <div class="reviews-box__counter">1</div>
+                  </div>
+                  <div class="rating-bg">
+                        <div style="width: 70%"></div>
+                      </div>
+                  <div class="reviews-box__counter">4.5</div>
+                </div><!--/reviews-box-->
+                </a>
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                      <use xlink:href="#map-icon"></use>
+                    </svg>
+                    <span>Гражданство:</span>
+                    <span class="card-mentors__info">Украина</span>
+                   </div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                      <use xlink:href="#bild-icon"></use>
+                    </svg>
+                    <span>Образование</span>
+                  </div>
+                    <div class="card-mentors__info">Университет Болоньи, Мюнхенский  технический университет</div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                        <use xlink:href="#cup-icon"></use>
+                      </svg>
+                    <span>The greatest achievement:</span>
+                  </div>
+                    <div class="card-mentors__info">
+                      Received a full scholarship from the Government of Italy, studied on a double degree in France with a scholarship from the European Union, received grants from the ERASMUS + program
+                      <a href="#" class="card-mentors__btn-more">...</a>
+                      <span class="card-mentors__info-more">
+                        , Received a full scholarship from the Government of Italy, studied on a double degree in France with a scholarship from the European Union, received grants from the ERASMUS + program
+                      </span>
+                  </div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                     <svg>
+                       <use xlink:href="#price-icon"></use>
+                     </svg>
+                     <span>Стоиомсть косультации</span>
+                    </div>
+                    <div class="card-mentors__info card-mentors__info_big">$50.0  (4 500 руб)</div>
+                  </div>
+                </div><!--/card-mentors__about-->
+              </div><!--/card-mentors__content-->
+            </div><!--/card-mentors__top-->
+            <div class="card-mentors__buttons">
+              <a href="#" class="card-mentors__btn">Оплатить консультацию</a>
+              <a href="#" class="card-mentors__btn-transparent">Подробнее</a>
+            </div><!--/card-mentors__buttons-->
+            </div><!--/card-mentors-->
+            <div class="card-mentors">
+              <div class="card-mentors__top">
+              <div class="card-mentors__header">
+                <div class="card-mentors__country owl-carousel  owl-theme">
+                  <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/flag-italy.svg" alt="">
+                        </div>
+                        <div class="country-item__name">Италия</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+                   <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/en.svg" alt="">
+                        </div>
+                        <div class="country-item__name">США</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+                   <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/flag-germany.svg" alt="">
+                        </div>
+                        <div class="country-item__name">Германия</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+                 </div><!--/owl-carousel-->
+              </div>
+              <div class="card-mentors__content">
+                <a href="#" class="card-mentors__link-block">
+                <div class="card-mentors__photo">
+                  <img src="assets/images/mentor_4.png" alt="">
+                </div>
+                <div class="card-mentors__name">
+                  Cтанислав
+                </div>
+                <div  class="card-mentors__reviews reviews-box">
+                  <div class="reviews-box__review">
+                    <svg>
+                          <use xlink:href="#review-icon"></use>
+                        </svg>
+                        <div class="reviews-box__counter">1</div>
+                  </div>
+                  <div class="rating-bg">
+                        <div style="width: 70%"></div>
+                      </div>
+                  <div class="reviews-box__counter">4.5</div>
+                </div><!--/reviews-box-->
+                </a>
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                      <use xlink:href="#map-icon"></use>
+                    </svg>
+                    <span>Гражданство:</span>
+                    <span class="card-mentors__info">Украина</span>
+                   </div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                      <use xlink:href="#bild-icon"></use>
+                    </svg>
+                    <span>Образование</span>
+                  </div>
+                    <div class="card-mentors__info">Университет Болоньи, Мюнхенский  технический университет</div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                        <use xlink:href="#cup-icon"></use>
+                      </svg>
+                    <span>The greatest achievement:</span>
+                  </div>
+                    <div class="card-mentors__info">
+                      Received a full scholarship 
+                      <a href="#" class="card-mentors__btn-more">...</a>
+                      <span class="card-mentors__info-more">
+                        , Received a full scholarship from the Government of Italy, studied on a double degree in France with a scholarship from the European Union, received grants from the ERASMUS + program
+                      </span>
+                  </div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                     <svg>
+                       <use xlink:href="#price-icon"></use>
+                     </svg>
+                     <span>Стоиомсть косультации</span>
+                    </div>
+                    <div class="card-mentors__info card-mentors__info_big">$50.0  (4 500 руб)</div>
+                  </div>
+                </div><!--/card-mentors__about-->
+              </div><!--/card-mentors__content-->
+            </div><!--/card-mentors__top-->
+            <div class="card-mentors__buttons">
+              <a href="#" class="card-mentors__btn">Оплатить консультацию</a>
+              <a href="#" class="card-mentors__btn-transparent">Подробнее</a>
+            </div><!--/card-mentors__buttons-->
+            </div><!--/card-mentors-->
+            <div class="card-mentors__more">
+              <div class="card-mentors">
+              <div class="card-mentors__top">
+              <div class="card-mentors__header">
+                <div class="card-mentors__country owl-carousel  owl-theme">
+                  <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/flag-italy.svg" alt="">
+                        </div>
+                        <div class="country-item__name">Италия</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+                   <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/en.svg" alt="">
+                        </div>
+                        <div class="country-item__name">США</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+                   <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/flag-germany.svg" alt="">
+                        </div>
+                        <div class="country-item__name">Германия</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+                 </div><!--/owl-carousel-->
+              </div>
+              <div class="card-mentors__content">
+                <a href="#" class="card-mentors__link-block">
+                <div class="card-mentors__photo">
+                  <img src="assets/images/mentor_4.png" alt="">
+                </div>
+                <div class="card-mentors__name">
+                  Cтанислав
+                </div>
+                <div  class="card-mentors__reviews reviews-box">
+                  <div class="reviews-box__review">
+                    <svg>
+                          <use xlink:href="#review-icon"></use>
+                        </svg>
+                        <div class="reviews-box__counter">1</div>
+                  </div>
+                  <div class="rating-bg">
+                        <div style="width: 70%"></div>
+                      </div>
+                  <div class="reviews-box__counter">4.5</div>
+                </div><!--/reviews-box-->
+                </a>
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                      <use xlink:href="#map-icon"></use>
+                    </svg>
+                    <span>Гражданство:</span>
+                    <span class="card-mentors__info">Украина</span>
+                   </div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                      <use xlink:href="#bild-icon"></use>
+                    </svg>
+                    <span>Образование</span>
+                  </div>
+                    <div class="card-mentors__info">Университет Болоньи, Мюнхенский  технический университет</div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                        <use xlink:href="#cup-icon"></use>
+                      </svg>
+                    <span>The greatest achievement:</span>
+                  </div>
+                    <div class="card-mentors__info">
+                      Received a full scholarship from the Government of Italy, studied on a double degree in France with a scholarship from the European Union, received grants from the ERASMUS + program
+                      <a href="#" class="card-mentors__btn-more">...</a>
+                      <span class="card-mentors__info-more">
+                        , Received a full scholarship from the Government of Italy, studied on a double degree in France with a scholarship from the European Union, received grants from the ERASMUS + program
+                      </span>
+                  </div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                     <svg>
+                       <use xlink:href="#price-icon"></use>
+                     </svg>
+                     <span>Стоиомсть косультации</span>
+                    </div>
+                    <div class="card-mentors__info card-mentors__info_big">$50.0  (4 500 руб)</div>
+                  </div>
+                </div><!--/card-mentors__about-->
+              </div><!--/card-mentors__content-->
+            </div><!--/card-mentors__top-->
+            <div class="card-mentors__buttons">
+              <a href="#" class="card-mentors__btn">Оплатить консультацию</a>
+              <a href="#" class="card-mentors__btn-transparent">Подробнее</a>
+            </div><!--/card-mentors__buttons-->
+            </div><!--/card-mentors-->
+            </div><!--/card-mentors__more-->
+            <div class="card-mentors__more">
+              <div class="card-mentors">
+              <div class="card-mentors__top">
+              <div class="card-mentors__header">
+                <div class="card-mentors__country owl-carousel  owl-theme">
+                  <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/flag-italy.svg" alt="">
+                        </div>
+                        <div class="country-item__name">ЮжнаяЮжная Корея</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+
+                  <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/flag-italy.svg" alt="">
+                        </div>
+                        <div class="country-item__name">ЮжнаяЮжнаяЮжная Корея</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+
+                 </div><!--/owl-carousel-->
+              </div>
+              <div class="card-mentors__content">
+                <a href="#" class="card-mentors__link-block">
+                <div class="card-mentors__photo">
+                  <img src="assets/images/mentor_4.png" alt="">
+                </div>
+                <div class="card-mentors__name">
+                  Cтанислав
+                </div>
+                <div  class="card-mentors__reviews reviews-box">
+                  <div class="reviews-box__review">
+                    <svg>
+                          <use xlink:href="#review-icon"></use>
+                        </svg>
+                        <div class="reviews-box__counter">1</div>
+                  </div>
+                  <div class="rating-bg">
+                        <div style="width: 70%"></div>
+                      </div>
+                  <div class="reviews-box__counter">4.5</div>
+                </div><!--/reviews-box-->
+                </a>
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                      <use xlink:href="#map-icon"></use>
+                    </svg>
+                    <span>Гражданство:</span>
+                    <span class="card-mentors__info">Украина</span>
+                   </div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                      <use xlink:href="#bild-icon"></use>
+                    </svg>
+                    <span>Образование</span>
+                  </div>
+                    <div class="card-mentors__info">Университет Болоньи, Мюнхенский  технический университет</div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                        <use xlink:href="#cup-icon"></use>
+                      </svg>
+                    <span>The greatest achievement:</span>
+                  </div>
+                    <div class="card-mentors__info">
+                      Received a full scholarship from the Government of Italy, studied on a double degree in France with a scholarship from the European Union, received grants from the ERASMUS + program
+                      <a href="#" class="card-mentors__btn-more">...</a>
+                      <span class="card-mentors__info-more">
+                        , Received a full scholarship from the Government of Italy, studied on a double degree in France with a scholarship from the European Union, received grants from the ERASMUS + program
+                      </span>
+                  </div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                     <svg>
+                       <use xlink:href="#price-icon"></use>
+                     </svg>
+                     <span>Стоиомсть косультации</span>
+                    </div>
+                    <div class="card-mentors__info card-mentors__info_big">$50.0  (4 500 руб)</div>
+                  </div>
+                </div><!--/card-mentors__about-->
+              </div><!--/card-mentors__content-->
+            </div><!--/card-mentors__top-->
+            <div class="card-mentors__buttons">
+              <a href="#" class="card-mentors__btn">Оплатить консультацию</a>
+              <a href="#" class="card-mentors__btn-transparent">Подробнее</a>
+            </div><!--/card-mentors__buttons-->
+            </div><!--/card-mentors-->
+            </div><!--/card-mentors__more-->
+            <div class="card-mentors__more">
+              <div class="card-mentors">
+              <div class="card-mentors__top">
+              <div class="card-mentors__header">
+                <div class="card-mentors__country owl-carousel  owl-theme">
+                  <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/flag-italy.svg" alt="">
+                        </div>
+                        <div class="country-item__name">Италия</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+                   <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/en.svg" alt="">
+                        </div>
+                        <div class="country-item__name">США</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+                   <!--card-mentors__item-->
+                    <div class="card-mentors__country__item">
+                      <a href="#" class="country-item">
+                        <div class="country-item__icon">
+                          <img src="assets/images/flag-germany.svg" alt="">
+                        </div>
+                        <div class="country-item__name">Германия</div>
+                      </a>
+                    </div>
+                  <!--/card-mentors__country__item-->
+                 </div><!--/owl-carousel-->
+              </div>
+              <div class="card-mentors__content">
+                <a href="#" class="card-mentors__link-block">
+                <div class="card-mentors__photo">
+                  <img src="assets/images/mentor_4.png" alt="">
+                </div>
+                <div class="card-mentors__name">
+                  Cтанислав
+                </div>
+                <div  class="card-mentors__reviews reviews-box">
+                  <div class="reviews-box__review">
+                    <svg>
+                          <use xlink:href="#review-icon"></use>
+                        </svg>
+                        <div class="reviews-box__counter">1</div>
+                  </div>
+                  <div class="rating-bg">
+                        <div style="width: 70%"></div>
+                      </div>
+                  <div class="reviews-box__counter">4.5</div>
+                </div><!--/reviews-box-->
+                </a>
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                      <use xlink:href="#map-icon"></use>
+                    </svg>
+                    <span>Гражданство:</span>
+                    <span class="card-mentors__info">Украина</span>
+                   </div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                      <use xlink:href="#bild-icon"></use>
+                    </svg>
+                    <span>Образование</span>
+                  </div>
+                    <div class="card-mentors__info">Университет Болоньи, Мюнхенский  технический университет</div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                      <svg>
+                        <use xlink:href="#cup-icon"></use>
+                      </svg>
+                    <span>The greatest achievement:</span>
+                  </div>
+                    <div class="card-mentors__info">
+                      Received a full scholarship from the Government of Italy, studied on a double degree in France with a scholarship from the European Union, received grants from the ERASMUS + program
+                      <a href="#" class="card-mentors__btn-more">...</a>
+                      <span class="card-mentors__info-more">
+                        , Received a full scholarship from the Government of Italy, studied on a double degree in France with a scholarship from the European Union, received grants from the ERASMUS + program
+                      </span>
+                  </div>
+                  </div>
+                </div><!--/card-mentors__about-->
+                <div class="card-mentors__about">
+                  <div>
+                    <div class="card-mentors__description">
+                     <svg>
+                       <use xlink:href="#price-icon"></use>
+                     </svg>
+                     <span>Стоиомсть косультации</span>
+                    </div>
+                    <div class="card-mentors__info card-mentors__info_big">$50.0  (4 500 руб)</div>
+                  </div>
+                </div><!--/card-mentors__about-->
+              </div><!--/card-mentors__content-->
+            </div><!--/card-mentors__top-->
+            <div class="card-mentors__buttons">
+              <a href="#" class="card-mentors__btn">Оплатить консультацию</a>
+              <a href="#" class="card-mentors__btn-transparent">Подробнее</a>
+            </div><!--/card-mentors__buttons-->
+            </div><!--/card-mentors-->
+            </div><!--/card-mentors__more-->
+					</div><!--/mentors__inner-->
+          <div class="card-mentors__button-more__wrapper">
+            <a href="#" class="card-mentors__button-more">Показать всех наставников</a>
+          </div>
+				</div>
+			</section><!--/mentors-->
+			<div class="afreement">
+				<div class="container">
+					<a href="#" class="afreement__link">StadyQA Afreement</a>
+				</div>
+			</div>
+			<div class="statistic">
+				<div class="container">
+					<div class="statistic__inner">
+						<div class="statistic__column">
+							<h4 class="statistic__title">Уровни обучения</h4>
+							<ul>
+								<li><a href="#">Бакалавриат</a></li>
+								<li><a href="#">Магистратура</a></li>
+								<li><a href="#">Аспирантура</a></li>
+								<li><a href="#">Бакалавриат</a></li>
+								<li><a href="#">Магистратура</a></li>
+								<li><a href="#">Аспирантура</a></li>
+							</ul>
+						</div><!--statistic__column-->
+						<div class="statistic__column">
+							<h4 class="statistic__title">Страны</h4>
+							<ul>
+								<li><a href="#">Обучение в Норвегии</a></li>
+								<li><a href="#">Обучение в США</a></li>
+								<li><a href="#">Обучение в Канаде</a></li>
+								<li><a href="#">Обучение в Германии</a></li>
+								<li><a href="#">Обучение в Италии</a></li>
+								<li><a href="#">Обучение в Норвегии</a></li>
+								<li><a href="#">Обучение в США</a></li>
+								<li><a href="#">Обучение в Канаде</a></li>
+								<li><a href="#">Обучение в Германии</a></li>
+								<li><a href="#">Обучение в Италии</a></li>
+							</ul>
+						</div><!--statistic__column-->
+						<div class="statistic__column">
+							<h4 class="statistic__title">Дисциплины</h4>
+							<ul>
+								<li><a href="#">Музыка</a></li>
+								<li><a href="#">Менеджмент</a></li>
+								<li><a href="#">Бизнес</a></li>
+								<li><a href="#">Музыка</a></li>
+								<li><a href="#">Менеджмент</a></li>
+								<li><a href="#">Бизнес</a></li>
+								<li><a href="#">Музыка</a></li>
+								<li><a href="#">Менеджмент</a></li>
+								<li><a href="#">Бизнес</a></li>
+								<li><a href="#">Музыка</a></li>
+							</ul>
+						</div><!--statistic__column-->
+						<div class="statistic__column">
+							<h4 class="statistic__title">Итого</h4>
+							<ul>
+								<li><a href="#">231 программ</a></li>
+								<li><a href="#">69 стран</a></li>
+								<li><a href="#">25 языков</a></li>
+								<li><a href="#">231 программ</a></li>
+								<li><a href="#">69 стран</a></li>
+								<li><a href="#">25 языков</a></li>
+								<li><a href="#">231 программ</a></li>
+								<li><a href="#">69 стран</a></li>
+								<li><a href="#">25 языков</a></li>
+							</ul>
+						</div><!--statistic__column-->
+					</div>
+				</div>
+			</div><!--/statistic-->
+			<section class="contact">
+				<div class="container">
+					<h2 class="title title_center">Остались вопросы?</h2>
+					<div class="contact__text">Пишите нам на почту: </div>
+					<a href="mailto:info@studyqa.com" class="contact__link">info@studyqa.com</a>
+				</div>
+			</section><!--/contact-->
+		</main>
+    
+    <a href="#" class="search-btn" data-scroll="card-search">
+      <img src="assets/images/search.svg" alt="">
+      <span>Поиск наставников </span>
+    </a>
+	</div>
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+
+  <script src="assets/js/chosen.jquery.min.js" type="text/javascript"></script>
+  <script src="assets/js/ImageSelect.jquery.js" type="text/javascript"></script>
+  
+<script src="assets/js/owl.carousel.min.js" type="text/javascript"></script>
+
+  <script src="assets/js/script.js"></script>
+
+
+</body>
+</html>

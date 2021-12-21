@@ -1,0 +1,223 @@
+.page_search {
+	.mentors {
+		padding-top: 65px;
+	}
+}
+
+.intro-search {
+	padding-top: 75px;
+	.container {
+		position: relative;
+	}
+	.title-main {
+		width: 80%;
+		margin: 0 auto 30px;
+		padding-left: 90px;
+	}
+}
+
+.card-consultation {
+	&_search {
+		width: 80%;
+		margin: 0 auto;
+		position: relative;
+		.card-consultation__title {
+			text-align: center;
+			margin-top: 25px;
+			margin-bottom: 45px;
+		}
+		.card-consultation__desc {
+			font-family: $ff;
+			position: static;
+			transform: translateY(0);
+		}
+		.card-consultation__item {
+			display: flex;
+			align-items: center;
+			padding-left: 0;
+			>* {
+				&:first-child {
+					width: 35%;
+					text-align: right;
+					padding-right: 16px;
+				}
+				&:last-child {
+					width: 65%;
+				}
+			}
+			&_more {
+				display: none;
+				margin-bottom: 24px;
+			}
+		}
+		.card-consultation__buttons {
+			width: 100%;
+			display: flex;
+			justify-content: flex-end;
+			.btn-main {
+				width: auto;
+				padding: 10px 40px;
+				margin-left: 50px;
+			}
+		}
+		.card-consultation__decor {
+			position: absolute;
+			right: 15px;
+			bottom: 15px;
+			transform: translateX(100%);
+			z-index: -1;
+		}
+	}
+}
+
+.search-btn {
+	transition: all .3s linear;
+	padding: 22px 30px;
+	background-color: $wh;
+	box-shadow: 0 4px 16px rgba(73, 66, 81, 0.06);
+	border-radius: 5px;
+	display: inline-block;
+	transform: rotate(-90deg) translateX(50%);
+	
+	position: fixed;
+	right: 0px;
+	top: 50%;
+	text-decoration: none;
+	img {
+		transform: rotate(180deg);
+		vertical-align: middle;
+		margin-right: 7px;
+	}
+	span {
+		vertical-align: middle;
+		font-family: $ff;
+		font-size: 19px;
+		font-weight: 500;
+		color: $bl;
+	}
+	&:hover {
+		transform: rotate(-90deg) scale(1.1, 1.1) translateX(50%);
+		text-decoration: none;
+	}
+}
+
+.search-btn {
+	right: 0px!important;
+	bottom: auto!important;
+	top: 50%!important;
+	transform-origin: 100% 100%;
+	transform: rotate(-90deg) translateX(50%)!important;
+	&:hover {
+		transform: rotate(-90deg) scale(1.1, 1.1) translateX(50%)!important;
+	}
+} 
+
+.btn-reset {
+	font-family: $ff;
+	font-size: 14px;
+	font-weight: 400;
+	color: $lpurple;
+	text-decoration: underline;
+	display: inline-block;
+	margin-top: 25px;
+	background-color: inherit;
+	transition: all .2s linear;
+	display: none;
+	outline: none;
+	border: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+@media(max-width: 1340px) {
+	.search-btn {
+		padding: 10px 20px;
+		right: -70px;
+		bottom: 15%;
+		z-index: 50;
+		img {
+			width: 15px;
+		}
+		span {
+			font-size: 14px;
+		}
+	}
+}
+
+@media(max-width: 992px) {
+	.intro-search {
+		.title-main {
+			width: 100%;
+			padding-left: 0;
+			text-align: center;
+
+		}
+	}
+
+	.card-consultation_search {
+		width: 100%;
+		.card-consultation__decor {
+			bottom: -35px;
+			right: -13px;
+			transform: translateX(0);
+		}
+	}
+}
+
+@media(max-width: 765px) {
+	.card-consultation_search {
+		.card-consultation__item {
+			display: block;
+			>* {
+				&:first-child {
+					width: 100%;
+					text-align: left;
+					margin-bottom: 10px;
+					padding-left: 15px;
+				}
+				&:last-child {
+					width: 100%;
+				}
+			}
+		}
+	}
+	.mentors-search {
+		flex-direction: column;
+		align-items: flex-start;
+		&__title {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media(max-width: 546px) {
+	.card-consultation_search .card-consultation__buttons {
+		flex-direction: column;
+		margin-top: 5px;
+		.btn-main {
+			width: 100%;
+			margin-left: 0;
+			margin-top: 20px;
+		}
+	}
+	.card-consultation__header {
+		justify-content: center;
+	}
+ 
+	.card-consultation_search .card-consultation__title {
+		margin-bottom: 30px;
+	}
+	.btn-reset {
+		display: block;
+	}
+}
+
+@media(max-width: 414px) {
+	.intro-search  {
+		padding-top: 40px;
+		.title-main {
+			font-size: 27px;
+		}
+	}
+}

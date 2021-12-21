@@ -1,0 +1,101 @@
+/**
+ * Additional styles correct images location and change to flat style
+ *
+ * @author     Web Semantics, Inc. Dev Team <info@websemantics.ca>
+ * @copyright  2011-2015 Web Semantics, Inc.
+ * @link       http://websemantics.ca
+ * @license    https://opensource.org/licenses/MIT
+ */
+
+.chosen-container-multi .chosen-choices,
+.chosen-container-single .chosen-single {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 9px 0 0 15px;
+  min-height: 42px;
+	border: 1px solid #e1e1e1;
+	border-radius: 4px;
+	background: none;
+	width:100%;
+	box-shadow: none;
+	margin-bottom: 0px;
+}
+.chosen-container .chosen-drop {
+    background: #fff;
+}
+
+ .chosen-search {
+display:none;
+}
+
+.chosen-container-multi .chosen-choices{
+	padding: 5px 8px;
+}
+
+.chosen-container {
+  width:100%!important;
+}
+
+.chosen-container-active .chosen-single {
+  border: 1px solid #e1e1e1;
+  box-shadow: none;
+}
+
+.chosen-container-single .chosen-search input[type="text"] {
+  border: 1px solid #acb4b9;
+}
+
+.chosen-container-active.chosen-container-multi.chosen-with-drop .chosen-choices,
+.chosen-container-active.chosen-with-drop .chosen-single {
+  border: 1px solid #e1e1e1;
+  border-bottom-color: white;
+  background-image: none;
+  box-shadow: none;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice {
+    border: 1px solid #e1e1e1;
+		background: none;
+	}
+
+.chosen-container-multi .chosen-drop {
+	margin-top: -4px;
+}
+
+.chosen-container-single .chosen-drop {
+	margin-top: -2px;
+}
+
+.chosen-container .chosen-drop {
+  border: 1px solid #e1e1e1;
+  border-top: 0;
+  box-shadow: none;
+}
+
+.chosen-container .chosen-results li.highlighted {
+  background-color: #3875d7;
+  background-image: none;
+  background-color: #acb4b9;
+  color: #fff;
+}
+
+.chosen-container-single .chosen-single div {
+    padding: 7px 3px 0px 0px;
+    width: 16px;
+}
+
+
+
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+  .chosen-rtl .chosen-search input[type="text"],
+  .chosen-container-single .chosen-single abbr,
+  .chosen-container-single .chosen-single div b,
+  .chosen-container-single .chosen-search input[type="text"],
+  .chosen-container-multi .chosen-choices .search-choice .search-choice-close,
+  .chosen-container .chosen-results-scroll-down span,
+
+}
